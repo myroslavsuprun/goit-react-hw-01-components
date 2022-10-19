@@ -1,7 +1,8 @@
 import React from 'react';
 import style from './FriendList.module.css';
+import PropTypes from 'prop-types';
 
-const FriendListItem = ({ friends }) => {
+const FriendItem = ({ friends }) => {
   return (
     <>
       {friends.map(({ avatar, name, isOnline, id }) => (
@@ -19,4 +20,11 @@ const FriendListItem = ({ friends }) => {
   );
 };
 
-export default FriendListItem;
+FriendItem.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  isOnline: PropTypes.bool,
+  id: PropTypes.number,
+};
+
+export default FriendItem;

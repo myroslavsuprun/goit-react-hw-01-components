@@ -1,11 +1,11 @@
 import React from 'react';
 import style from './FriendList.module.css';
-import FriendListItem from './FriendListItem';
+import FriendItem from './FriendItem';
 
 const FriendList = ({ friends }) => {
   return (
     <ul className={style.friendsList}>
-      <FriendListItem friends={friends} />
+      <FriendItem friends={friends} />
     </ul>
   );
 };
