@@ -22,10 +22,10 @@ const Statistics = ({ data }) => {
   );
 };
 
-// Statistics.propTypes = {
-//   id: PropTypes.string,
-//   label: PropTypes.string,
-//   percentage: PropTypes.number,
-// };
+Statistics.propTypes = {
+  id: PropTypes.string,
+  label: PropTypes.string,
+  percentage: PropTypes.number,
+};
 
 export default Statistics;
